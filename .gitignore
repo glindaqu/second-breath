@@ -6,6 +6,8 @@ __pycache__/
 # Already compiled renpy files
 *.rpyc
 
+.vscode
+
 # C extensions
 *.so
 

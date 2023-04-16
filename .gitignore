@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Already compiled renpy files
+*.rpyc
+
 # C extensions
 *.so
 

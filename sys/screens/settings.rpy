@@ -24,13 +24,14 @@ screen settings_menu_sb:
     imagebutton:
         xpos 1100
         ypos 398
-        if persistent.is_sound_play_sb not Null and persistent.is_sound_play_sb:
+
+        if is_sound_play_sb:
             idle u"mods/secondBreath/source/ui/checked.png"
             hover u"mods/secondBreath/source/ui/checked.png"
         else:
             idle u"mods/secondBreath/source/ui/unchecked.png"
             hover u"mods/secondBreath/source/ui/unchecked.png"
-        action SetVariable("is_sound_play_sb", not persistent.is_sound_play_sb), PauseAudio("music", persistent.is_sound_play_sb)
+        action SetVariable("is_sound_play_sb", not is_sound_play_sb), PauseAudio("music", is_sound_play_sb)
 
     #achiv toggle
     imagebutton:

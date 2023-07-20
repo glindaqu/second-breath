@@ -1,0 +1,11 @@
+init:
+    define none_sb = Character(None, kind=nvl, color="#ecdf29", what_color="#ffdd7d")
+    define thinks_nvl_sb = Character(None, kind=nvl, color="#ecdf29", what_color="#ffdd7d", what_prefix='~', what_suffix='~')
+    define unknown_nvl_sb = Character('???', kind=nvl, color="#5777df", what_color="#ffdd7d")
+    define dima_nvl_sb =  Character('Дима', kind=nvl, color="#5777df", what_color="#ffdd7d")
+    define dima_sb =  Character('Дима', kind=adv, color="#5777df", what_color="#ffdd7d")
+    define sm_sb = Character('Семён', kind=nvl, color="#85f085", what_color="#ffdd7d")
+    define uvao_sb = Character('Юля', kind=adv, color="#01e633", what_color="#ffdd7d")
+    define friend_sb = Character('Друг', kind=adv, color="#c9a8b7", what_color="#ffdd7d")
+    define teacher_sb = Character('Преподаватель', kind=adv, color="#c9a8b7", what_color="#ffdd7d")
+    define girl_sb = Character('Девушка', kind=adv, color="#8a8185", what_color="#ffdd7d")

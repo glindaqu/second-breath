@@ -25,37 +25,38 @@ screen settings_menu_sb:
         xpos 1100
         ypos 398
 
-        if is_sound_play_sb:
+        if persistent.is_sound_play_sb:
             idle u"mods/secondBreath/source/ui/checked.png"
             hover u"mods/secondBreath/source/ui/checked.png"
         else:
             idle u"mods/secondBreath/source/ui/unchecked.png"
             hover u"mods/secondBreath/source/ui/unchecked.png"
-        action SetVariable("is_sound_play_sb", not is_sound_play_sb), PauseAudio("music", is_sound_play_sb)
+        action SetVariable("persistent.is_sound_play_sb", 
+                    not persistent.is_sound_play_sb), PauseAudio("music", persistent.is_sound_play_sb)
 
     #achiv toggle
     imagebutton:
         xpos 1100
         ypos 476
-        if is_achiv_show_sb:
+        if persistent.is_achiv_show_sb:
             idle u"mods/secondBreath/source/ui/checked.png"
             hover u"mods/secondBreath/source/ui/checked.png"
         else:
             idle u"mods/secondBreath/source/ui/unchecked.png"
             hover u"mods/secondBreath/source/ui/unchecked.png"
-        action SetVariable("is_achiv_show_sb", not is_achiv_show_sb)
+        action SetVariable("persistent.is_achiv_show_sb", not persistent.is_achiv_show_sb)
 
     #adult toggle
     imagebutton:
         xpos 1100
         ypos 554
-        if is_adult_mode_sb:
+        if persistent.is_adult_mode_sb:
             idle u"mods/secondBreath/source/ui/checked.png"
             hover u"mods/secondBreath/source/ui/checked.png"
         else:
             idle u"mods/secondBreath/source/ui/unchecked.png"
             hover u"mods/secondBreath/source/ui/unchecked.png"
-        action SetVariable("is_adult_mode_sb", not is_adult_mode_sb)
+        action SetVariable("persistent.is_adult_mode_sb", not persistent.is_adult_mode_sb)
 
 
 label settings_screen_sb:

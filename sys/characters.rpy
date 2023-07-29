@@ -1,6 +1,7 @@
 init:
     define none_sb = Character(None, kind=nvl, color="#ecdf29", what_color="#ffdd7d")
-    define thinks_nvl_sb = Character(None, kind=nvl, color="#ecdf29", what_color="#ffdd7d", what_prefix='~', what_suffix='~')
+    define thinks_nvl_sb = Character(None, kind=nvl, color="#ecdf29", what_color="#ffdd7d", what_prefix='~ ', what_suffix=' ~')
+    define thinks_adv_sb = Character(None, kind=adv, color="#ecdf29", what_color="#ffdd7d", what_prefix='~ ', what_suffix=' ~')
     define unknown_nvl_sb = Character('???', kind=nvl, color="#5777df", what_color="#ffdd7d")
     define dima_nvl_sb =  Character('Дима', kind=nvl, color="#5777df", what_color="#ffdd7d")
     define dima_sb =  Character('Дима', kind=adv, color="#5777df", what_color="#ffdd7d")

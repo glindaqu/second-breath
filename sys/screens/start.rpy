@@ -14,15 +14,17 @@ screen main_menu_sb:
         hotspot(815, 566, 327, 78) action Jump("settings_screen_sb")
 
         #exit
-        hotspot(815, 681, 262, 78) action NullAction()
+        hotspot(815, 681, 262, 78) action Jump("exit_sb")
         
 
 
 label start_screen_sb:
     if persistent.is_sound_play_sb:
         play music u"mods/secondBreath/source/music/Celestial.mp3" if_changed
+        $ persistent.sprite_time = "sunset"
     call screen main_menu_sb
 
 
-
+label exit_sb:
+    return
         

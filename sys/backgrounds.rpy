@@ -1,4 +1,4 @@
-init:
+init -999:
     $ absolute_way = u"mods/secondBreath/source/bg/" 
 
     image bg coffee house sb = absolute_way + u"coffee_market.png"
@@ -18,3 +18,10 @@ init:
         "persistent.sprite_time=='day'", absolute_way + u"city_street_day.png",
         "persistent.sprite_time=='night'", absolute_way + u"city_street_night.png"
     )
+
+    image bg stars anim sb:
+        "mods/secondBreath/source/bg/stars/stars_1.png" with dissolve
+        pause 0.5
+        "mods/secondBreath/source/bg/stars/stars_2.png" with dissolve
+        pause 0.5
+        repeat

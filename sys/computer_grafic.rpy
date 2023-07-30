@@ -1,4 +1,4 @@
-init -1:
+init -888:
 
     $ absolute_way = "mods/secondBreath/source/cg/"
 

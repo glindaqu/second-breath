@@ -1,4 +1,4 @@
-init:
+init -777:
     $ absolute_way = u"mods/secondBreath/source/sound/" 
     
     $ stomach_rumbling_sb = absolute_way + u"stomach_rumbling.mp3"

@@ -20,8 +20,7 @@ screen main_menu_sb:
 
 label start_screen_sb:
     if persistent.is_sound_play_sb:
-        play music u"mods/secondBreath/source/music/Celestial.mp3" if_changed
-        $ persistent.sprite_time = "sunset"
+        play music celestial_sb if_changed
     call screen main_menu_sb
 
 

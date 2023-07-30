@@ -8,6 +8,9 @@ init -999:
     image bg room sb = absolute_way + u"room.png"
     image bg kitchen sb = absolute_way + u"kitchen.png"
     image bg outdoor sb = absolute_way + u"out.png"
+    image bg store sb = absolute_way + "store.png"
+    image bg park sb = absolute_way + "park.png"
+    image bg fifth floor house sb = absolute_way + "ffh.png"
 
     image bg bus stop sb = ConditionSwitch(
         "persistent.sprite_time=='day'", absolute_way + u"bus_stop_day.png",
